@@ -4,10 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Dashboard</title>
-
+    <!-- Material Icon CDN-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Finance Dashboard</h1>
+    <div class="container">
+      <aside>
+        <section class="top">
+          <div class="logo">
+            <span class="material-symbols-rounded"> face_2 </span>
+          </div>
+          <div class="search">
+            <span class="material-symbols-rounded"> search </span>
+          </div>
+        </section>
+
+        <nav class="sidebar">
+          <div class="active">
+            <a href="#">
+              <span class="material-symbols-rounded"> home </span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-rounded"> full_coverage </span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-rounded"> list_alt </span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-rounded"> person </span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="bottom">
+          <div>
+            <span class="material-symbols-rounded"> notifications_unread </span>
+          </div>
+          <div>
+            <span class="material-symbols-rounded"> logout </span>
+          </div>
+        </section>
+      </aside>
+
+      <section class="user">
+        <div class="user-top">
+          <img src="./assets/user.webp" />
+          <div class="user-name">
+            <h1 class="dark">Hi Mike,</h1>
+            <p class="dark">welcome back.</p>
+          </div>
+        </div>
+
+        <div class="today">
+          <h3 class="dark">Today</h3>
+          <div>
+            <h2 class="dark">$19,892</h2>
+            <p class="light">Account balacne</p>
+          </div>
+          <div>
+            <h3 class="dark">$4000</h3>
+            <p class="light">Year-to-date-Contributions</p>
+          </div>
+          <div>
+            <h3 class="dark">$1892</h3>
+            <p class="light">Total Interest</p>
+          </div>
+          <button>
+            I want to
+            <span class="material-symbols-rounded"> arrow_drop_down </span>
+          </button>
+        </div>
+
+        <div class="recent">
+          <h3 class="dark">Recent Transactions</h3>
+          <div>
+            <p class="light">2020-08-07</p>
+            <h4 class="dark">Withdrawl Transfer to Bank-XXX11</h4>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <p class="light">2020-07-21</p>
+            <h4 class="dark">Withdrawl Transfer to Bank-XXX11</h4>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <p class="light">2020-07-16</p>
+            <h4 class="dark">Withdrawl Transfer to Bank-XXX11</h4>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </section>
+
+      <main>
+        <div class="main-header">
+          <p class="italic-heading"><i>Retirement Income</i></p>
+          <h2 class="dark">Starting Year 2056</h2>
+        </div>
+
+        <div class="goal">
+          <div class="goal-item">
+            <h2 class="dark">$3000,000</h2>
+            <p class="light">My Goal</p>
+          </div>
+          <div class="goal-item">
+            <h2 class="dark">59%</h2>
+            <p class="light">Goal Achieved</p>
+          </div>
+          <div class="goal-item">
+            <h2 class="dark">$30000</h2>
+            <p class="light">Est. Monthly Income</p>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

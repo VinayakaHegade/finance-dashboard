@@ -1,0 +1,162 @@
+/* -- CSS VARIABLES -- */
+:root {
+  --color-primary: #4935ff;
+  --color-primary-variant: #3e2edf;
+  --color-background: #fafafa;
+  --color-text-light: #9f9f9f;
+  --color-text-dark: #1e1e1e;
+  --color-primary-green: #22d6aa;
+
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light {
+  color: var(--color-text-light);
+}
+
+.dark {
+  color: var(--color-text-dark);
+}
+
+.container {
+  display: flex;
+  /* width: 96%; */
+  margin: 0 auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  padding: 12px;
+  height: 100vh;
+  width: fit-content;
+}
+
+aside span {
+  color: var(--color-text-light);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .active {
+  background-color: var(--color-primary-variant);
+  border-radius: var(--border-radius-1);
+}
+
+.sidebar .active span {
+  color: white;
+  padding: 4px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.user {
+  padding: 40px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.user-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-top > img {
+  height: 60px;
+  widht: 60px;
+  border-radius: 50%;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.today button {
+  border: none;
+  border-radius: var(--border-radius-1);
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: fit-content;
+  padding: 8px 12px 8px 20px;
+}
+
+.recent {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recent > h3 {
+  margin-bottom: 8px;
+}
+
+.divider {
+  border: 1px solid #f0f0f0;
+}
+
+main {
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.italic-heading {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.goal {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.goal-item {
+  width: 150px;
+  border-bottom: 2px solid var(--color-primary-variant);
+}
+
+.goal-item p {
+  margin-bottom: 8px;
+}
